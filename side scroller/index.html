@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+</style>
+<script>
+//////////////////////////////////////////////////////////////////////////
+    document.addEventListener("DOMContentLoaded", function(event) { 
+    const JohnsLibrary = document.createElement('script');
+    JohnsLibrary.setAttribute('src','JohnsLibrary.js');
+    document.head.appendChild(JohnsLibrary);
+//////////////////////////////////////////////////////////////////////////
+    JohnsLibrary.onload = () => {
+        loadStylesheet('style.css');
+        loadScripts(['nextScript.js']);
+    }
+});
+//////////////////////////////////////////////////////////////////////////
+</script>
+<body>
+
+
+<canvas id='gameScreen'></canvas>
+
+
+</body>
+</html> 
